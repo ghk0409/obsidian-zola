@@ -4,6 +4,7 @@ pip install python-slugify
 
 # Avoid copying over netlify.toml (will ebe exposed to public API)
 echo "netlify.toml" >>__obsidian/.gitignore
+echo "statics/*" >>__obsidian/.gitignore
 
 # Sync Zola template contents
 rsync -a __site/zola/ __site/build
